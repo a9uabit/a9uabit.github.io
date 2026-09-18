@@ -58,5 +58,6 @@ fn Home() -> impl IntoView {
 fn About() -> impl IntoView {
     view! {
         <h1>"Hi, I'm a9ua!"</h1>
+        <p>"(WIP)"</p>
     }
 }
