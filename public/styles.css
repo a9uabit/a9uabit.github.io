@@ -1,0 +1,61 @@
+body {
+  animation: background-fade-in 0.4s ease forwards;
+}
+
+@keyframes background-fade-in {
+  to {
+    background: aliceblue;
+  }
+}
+
+.home {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+}
+
+.home > img {
+  width: 200px;
+  border-radius: 50%;
+  border: black solid 2px;
+}
+
+.home-name > h1 {
+  color: royalblue;
+  /* -webkit-text-stroke: 3px black; */
+  /* paint-order: stroke; */
+}
+
+.home-name {
+  font-size: 1.5em;
+}
+
+.home-name > p {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.home-name > * {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+}
+
+nav > a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+  padding: 2px 14px;
+  margin: 0 5px;
+  background: white;
+  border-radius: 1000px;
+  transition: color 0.2s;
+}
+
+nav > a:hover {
+  color: rgb(0 0 0 / 60%);
+}
