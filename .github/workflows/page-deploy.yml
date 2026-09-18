@@ -17,6 +17,9 @@ jobs:
         with:
           components: clippy, rustfmt
 
+      - name: Rust Cache
+        uses: Swatinem/rust-cache@v2
+
       - name: Add WASM target
         run: rustup target add wasm32-unknown-unknown
 
@@ -28,9 +31,6 @@ jobs:
 
       - name: Build
         run: ./trunk build --release
-
-      - name: Rust Cache
-        uses: Swatinem/rust-cache@v2
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
