@@ -13,7 +13,8 @@ body {
   gap: 100px;
   align-items: center;
   justify-content: center;
-  height: 100dvh;
+  margin-top: 20px;
+  /* height: 100dvh; */
 }
 
 .home > img {

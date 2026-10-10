@@ -1,6 +1,9 @@
 use leptos::{logging, prelude::*};
 use leptos_meta::{Stylesheet, Title, provide_meta_context};
-use leptos_router::{components::{A, Router}, hooks::use_query_map};
+use leptos_router::{
+    components::{A, Router},
+    hooks::use_query_map,
+};
 
 fn main() {
     console_error_panic_hook::set_once();
@@ -27,11 +30,11 @@ fn App() -> impl IntoView {
         <Router>
             <nav>
                 <A href="/">"Home"</A>
-                <A href="/?page=about">"About"</A>
+                // <A href="/?page=about">"About"</A>
             </nav>
 
             {move || match page().as_str() {
-                "about" => About().into_any(),
+                // "about" => About().into_any(),
                 "" => Home().into_any(),
                 _ => view! { <h1>Not Found</h1> }.into_any(),
             }}
